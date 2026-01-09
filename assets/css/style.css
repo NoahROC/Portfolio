@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A;
+    font-family: cabin;
+}
+
+.section-background-color{
+    background-color: #1E293B;
+}
+
+.header-footer-color{
+    background-color: #020617;
+}
+
+.primary-text-color{
+    color: #E5E7EB;
+}
+
+.secondary-text-color{
+    color: #94A3B8;
+}
+
+.section-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: #020617;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    font-family: chewy;
+    background-color: #020617;
+    color: #3B82F6;
+    margin-left: 10px;
+}
+
+#header-buttons{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 30%;
+    background-color: #020617;
+}
+
+#header-buttons li a{
+    text-decoration: none;
+    color: #E5E7EB;
+    background-color: #020617;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+
+#start-box{
+    width: 400px;
+    height: 350px;
+    border-radius: 16px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.start-text{
+   border-radius: 16px;
+   text-align: center;
+   color: #E5E7EB;
+}
+
+#about-me-box{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
