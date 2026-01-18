@@ -195,8 +195,12 @@ body {
     max-width: 180px;
 }
 
-.project-titles {
+.project-card h1 {
     font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #94A3B8;
 }
 
 /* Contact*/
