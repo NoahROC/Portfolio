@@ -131,8 +131,6 @@ body {
 
 .about-me-row {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 50px;
 }
 
@@ -143,16 +141,28 @@ body {
 }
 
 .about-me-boxes-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .about-me-box {
-    width: 400px;
     height: 100px;
     background-color: #1E293B;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.about-me-box h1{
+    font-size: 25px;
+}
+
+.about-me-box-img {
+    width: 75px;
+    height: 85px;
 }
 
 /* Projects */
@@ -165,12 +175,12 @@ body {
     margin-bottom: 60px;
 }
 
+/* FIXED GRID FOR PROJECTS */
 .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 75px;
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -179,20 +189,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
-    width: 180px;
     height: 260px;
     background-color: #1E293B;
     border-radius: 16px;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .project-card:hover {
     background-color: #273449;
+    transform: translateY(-5px);
 }
 
 .project-img {
     border-radius: 10px;
-    max-width: 180px;
 }
 
 .project-card h1 {
@@ -258,7 +267,6 @@ body {
     padding: 0 40px;
 }
 
-
 .footer ul {
     list-style: none;
     display: flex;
@@ -280,4 +288,71 @@ body {
     font-family: "Chewy", cursive;
     color: #3B82F6;
     font-size: 3rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .about-me-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me-boxes-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .about-me-boxes-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 0.9rem;
+    }
+
+    .start-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .start-button {
+        width: 100%;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer ul {
+        align-items: center;
+    }
 }
