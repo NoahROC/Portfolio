@@ -156,7 +156,7 @@ body {
     padding: 0 20px;
 }
 
-.about-me-box h1{
+.about-me-box h1 {
     font-size: 25px;
 }
 
@@ -175,7 +175,6 @@ body {
     margin-bottom: 60px;
 }
 
-/* FIXED GRID FOR PROJECTS */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -290,14 +289,12 @@ body {
     font-size: 3rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
 
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Tablet */
 @media (max-width: 900px) {
     .about-me-row {
         flex-direction: column;
@@ -316,7 +313,6 @@ img {
     }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .about-me-boxes-wrapper {
         grid-template-columns: 1fr;
