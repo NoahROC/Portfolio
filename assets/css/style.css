@@ -141,8 +141,7 @@ body {
 }
 
 .about-me-boxes-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 20px;
 }
 
@@ -253,6 +252,83 @@ body {
 
 .contact-img {
     width: 25px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-side {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1E293B;
+    color: #E5E7EB;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.submit-button {
+    background-color: #2196D3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(33, 150, 211, 0.5);
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #1E293B;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #2196D3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* Footer */

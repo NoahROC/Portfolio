@@ -108,21 +108,47 @@
         </section>
 
         <section id="contact" class="section section-dark">
-            <div class="container">
-                <h1 class="contact-title">Contact Me</h1>
+    <div class="container">
+        <h1 class="contact-title">Contact Me</h1>
 
+        <div class="contact-wrapper">
+            
+            <div class="contact-side">
                 <p class="contact-text">
-                    You can contact me here.
+                    You can contact me directly or send me a message using the form.
                 </p>
 
                 <div class="contact-links">
-                    <a href="mailto:1219897@student.roc-nijmegen.nl" class="contact-link"><img class="contact-img"
-                            src="assets/img/outlook-logo.png" alt="outlook logo">Mail me!</a>
-                    <a href="https://github.com/NoahROC" class="contact-link"><img class="contact-img"
-                            src="assets/img/github-logo.png" alt="github logo">GitHub</a>
+                    <a href="mailto:1219897@student.roc-nijmegen.nl" class="contact-link">
+                        <img class="contact-img" src="assets/img/outlook-logo.png" alt="outlook logo">
+                        Mail me
+                    </a>
+
+                    <a href="https://github.com/NoahROC" class="contact-link">
+                        <img class="contact-img" src="assets/img/github-logo.png" alt="github logo">
+                        GitHub
+                    </a>
                 </div>
             </div>
-        </section>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Please fill in the form.</p>
+            <button id="close-popup-button">Close</button>
+        </div>
+    </div>
+</section>
+
 
     </main>
     <footer class="footer">
